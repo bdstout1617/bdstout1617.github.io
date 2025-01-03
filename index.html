@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bel Meadow Estates HOA</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            margin-top: 30px;
+        }
+        .navbar {
+            background-color: #26a69a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo center">Bel Meadow Estates</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact-board">Contact Board</a></li>
+                <li><a href="#bylaws">By-Laws</a></li>
+                <li><a href="#user-info">User Info</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="container">
+        <h3>Welcome to Bel Meadow Estates HOA</h3>
+        <p>Welcome to the official website of Bel Meadow Estates Homeowners Association. Our community is committed to maintaining a safe and welcoming environment for all residents.</p>
+        <h5>Contact Information:</h5>
+        <ul>
+            <li>Email: hoa@belmeadowestates.com</li>
+            <li>Phone: (123) 456-7890</li>
+            <li>Address: 123 Bel Meadow Drive, Springfield, ST 54321</li>
+        </ul>
+    </section>
+
+    <!-- Contact Board Page -->
+    <section id="contact-board" class="container">
+        <h4>Contact the HOA Board Members</h4>
+        <form action="#">
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label for="email">Your Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" class="materialize-textarea" required></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Submit</button>
+        </form>
+        <h5>Board Member Contacts:</h5>
+        <ul>
+            <li>John Doe - President: johndoe@belmeadowestates.com</li>
+            <li>Jane Smith - Secretary: janesmith@belmeadowestates.com</li>
+            <li>Mark Johnson - Treasurer: markjohnson@belmeadowestates.com</li>
+        </ul>
+    </section>
+
+    <!-- By-Laws Page -->
+    <section id="bylaws" class="container">
+        <h4>HOA By-Laws</h4>
+        <p>You can view or download the HOA By-Laws below:</p>
+        <a href="bylaws.pdf" class="btn waves-effect waves-light" download>Download By-Laws (PDF)</a>
+        <p>Or view it directly:</p>
+        <embed src="bylaws.pdf" width="100%" height="600px" />
+    </section>
+
+    <!-- User Information Page -->
+    <section id="user-info" class="container">
+        <h4>User Information</h4>
+        <p>If you are logged in, your personal information will be displayed here.</p>
+        <p><strong>Name:</strong> Jane Doe</p>
+        <p><strong>Email:</strong> janedoe@belmeadowestates.com</p>
+        <button class="btn waves-effect waves-light">Update Information</button>
+    </section>
+
+    <!-- Login Page -->
+    <section id="login" class="container">
+        <h4>Login</h4>
+        <form action="#">
+            <div class="input-field">
+                <input type="email" id="login-email" required>
+                <label for="login-email">Email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="login-password" required>
+                <label for="login-password">Password</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Login</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p>&copy; 2025 Bel Meadow Estates HOA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Initialize Materialize components
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+</html>
