@@ -1,0 +1,1 @@
+import{a as u,z as e,a9 as s}from"./index-DlYNYLx-.js";const n={dark:{type:Boolean,default:null}};function o(a,r){return u(()=>a.dark===null?r.dark.isActive:a.dark)}function c(){return e(s)}export{o as a,c as b,n as u};
